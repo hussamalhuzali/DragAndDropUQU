@@ -1,0 +1,90 @@
+/* Container for click-to-select and arrow-based reordering */
+.draggable-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* The list from which items can be selected */
+.draggable-list, .selected-list {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 200px;
+    background-color: #f4f4f4;
+}
+
+/* Individual clickable items */
+.draggable-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.draggable-item:hover {
+    background-color: #e9e9e9;
+}
+
+/* Disabled state for selected items */
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Error message styling */
+#error-message {
+    color: red;
+    display: none;
+}
+
+/* Style for the 'إرجاع' button */
+.return-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Style for the ordered list on the right */
+#ordered-list {
+    list-style-type: decimal; /* Numeric bullets */
+    padding-left: 20px;
+}
+
+/* Flex container for the chosen field and controls */
+#ordered-list .draggable-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Flex container for arrows between the number and field */
+.controls {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Style for up/down arrow buttons */
+.arrow-button {
+    background-color: lightblue;
+    border: none;
+    padding: 8px;
+    margin: 0 8px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.arrow-button:hover {
+    background-color: lightcoral;
+}

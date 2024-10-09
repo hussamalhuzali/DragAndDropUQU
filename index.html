@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إختيار المقررات</title>
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Title of the form -->
+    <h1>قم بختيار المقررات لليمين </h1>
+
+    <!-- Container for drag-and-drop sections -->
+    <div class="draggable-container">
+        <!-- List of options to drag from (in Arabic) -->
+        <div class="draggable-list" id="draggable-list">
+            <div class="draggable-item" data-id="1">اتجاهات إدارية حديثة</div>
+            <div class="draggable-item" data-id="2">اتصالات الأعمال</div>
+            <div class="draggable-item" data-id="3">الاتصالات الإدارية</div>
+            <div class="draggable-item" data-id="4">الاتصالات التسويقية المتكاملة</div>
+            <div class="draggable-item" data-id="5">الاستراتيجيات الإدارية</div>
+            <div class="draggable-item" data-id="6">الإدارة المالية</div>
+            <div class="draggable-item" data-id="7">البيئة القانونية لادارة الاعمال بالمملكة</div>
+            <div class="draggable-item" data-id="8">التدريب العملي</div>
+            <div class="draggable-item" data-id="9">التدريب الميداني</div>
+            <div class="draggable-item" data-id="10">التسويق</div>
+            <div class="draggable-item" data-id="11">التسويق الالكتروني</div>
+            <div class="draggable-item" data-id="12">التسويق التطبيقي الاستراتيجي</div>
+            <div class="draggable-item" data-id="13">التسويق الدولي</div>
+            <div class="draggable-item" data-id="14">التسويق للمنظمات الغير ربحية</div>
+            <div class="draggable-item" data-id="15">السلوك التنظيمي</div>
+            <div class="draggable-item" data-id="16">إدارة الازمات</div>
+            <div class="draggable-item" data-id="17">إدارة الاعمال الدولية</div>
+            <div class="draggable-item" data-id="18">إدارة الإبتكار</div>
+            <div class="draggable-item" data-id="19">إدارة الأسواق المالية</div>
+            <div class="draggable-item" data-id="20">إدارة التجزئة</div>
+            <div class="draggable-item" data-id="21">إدارة المبيعات</div>
+            <div class="draggable-item" data-id="22">إدارة المنتج والعلامة التجارية</div>
+            <div class="draggable-item" data-id="23">إدارة الموارد البشرية (2)</div>
+            <div class="draggable-item" data-id="24">إدارة انتاج</div>
+            <div class="draggable-item" data-id="25">إدارة سلاسل الإمداد والعمليات اللوجستية</div>
+            <div class="draggable-item" data-id="26">بحوث العمليات الإدارية</div>
+            <div class="draggable-item" data-id="27">تحليل الأعمال</div>
+            <div class="draggable-item" data-id="28">تحليل المعلومات التسويقية</div>
+            <div class="draggable-item" data-id="29">تسويق 2</div>
+            <div class="draggable-item" data-id="30">تسويق الخدمات</div>
+            <div class="draggable-item" data-id="31">تسويق المتحوى</div>
+            <div class="draggable-item" data-id="32">تطبيقات الحاسب في الأعمال (2)</div>
+            <div class="draggable-item" data-id="33">خدمة العملاء</div>
+            <div class="draggable-item" data-id="34">ريادة الأعمال (1)</div>
+            <div class="draggable-item" data-id="35">سلسلة الامداد والتوزيع</div>
+            <div class="draggable-item" data-id="36">مبادئ التسويق</div>
+            <div class="draggable-item" data-id="37">محاسبة التكاليف</div>
+            <div class="draggable-item" data-id="38">مشروع بحث تسويقي</div>
+            <div class="draggable-item" data-id="39">نظم المعلومات الإدارية (2)</div>
+            <div class="draggable-item" data-id="40">مبادئ الإدارة (2)</div>
+            <div class="draggable-item" data-id="41">مبادئ إدارة الأعمال</div>
+            
+        </div>
+
+        <!-- List to drag items into -->
+        <div class="selected-list" id="selected-list">
+            <p>اسحب اختياراتك هنا (بحد أقصى 5 خيارات)</p>
+            <ol id="ordered-list"></ol> <!-- Ordered list for selected items -->
+        </div>
+    </div>
+
+    <!-- Error message for when more than 5 options are selected -->
+    <p id="error-message">يمكنك اختيار 5 خيارات فقط!</p>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
