@@ -1,6 +1,7 @@
 // Selectable and returnable items
 const draggableItems = document.querySelectorAll('.draggable-item');
 const draggableList = document.getElementById('draggable-list');
+const selectedList = document.getElementById('selected-list'); // Corrected 'getElementById'
 const orderedList = document.getElementById('ordered-list');
 const errorMessage = document.getElementById('error-message');
 
